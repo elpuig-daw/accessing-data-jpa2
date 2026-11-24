@@ -10,5 +10,19 @@ Content-Type: application/json
 
 {
     "firstName": "John",
-    "lastName": "Doe"
+    "lastName": "Doe",
+    "email": "jdoe@email.com"
 }
+
+### PUT
+PUT http://localhost:8080/customers/1
+Content-Type: application/json
+
+{
+    "firstName": "Linus",
+    "lastName": "Torvaldz",
+    "email": "lt@email.com"
+}
+
+### DELETE
+DELETE http://localhost:8080/customers/1

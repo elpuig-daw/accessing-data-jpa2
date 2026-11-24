@@ -39,5 +39,16 @@ public class CustomerResource {
         return ResponseEntity.ok(cdto);
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<CustomerDto> updateCustomer(@PathVariable("id") Long id, @RequestBody CustomerDto customerDto) {
+        CustomerDto cdto = customerService.updateCustomer(id, customerDto);
+        return ResponseEntity.ok(cdto);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteCustomer(@PathVariable("id") Long id) {
+        customerService.deleteCustomer(id);
+        return ResponseEntity.ok(null);
+    }
 
 }

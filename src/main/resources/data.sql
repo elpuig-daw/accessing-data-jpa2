@@ -1,14 +1,10 @@
-INSERT INTO customers (first_name, last_name)
+INSERT INTO customers (first_name, last_name, email)
 VALUES
-    ('Linus', 'Torvalds'),
-    ('Tim', 'Berners-Lee'),
-    ('Guido', 'van Rossum'),
-    ('James', 'Gosling'),
-    ('Bjarne', 'Stroustrup'),
-    ('Dennis', 'Ritchie'),
-    ('Alan', 'Turing'),
-    ('Ada', 'Lovelace'),
-    ('Grace', 'Hopper'),
-    ('Barbara', 'Liskov'),
-    ('Margaret', 'Hamilton'),
-    ('Radia', 'Perlman');
+    ('Linus', 'Torvalds', 'lt@email.com'),
+    ('Tim', 'Berners-Lee','tb@email.com'),
+    ('Guido', 'van Rossum','gvr@email.com'),
+    ('James', 'Gosling','jgos@email.com'),
+    ('Bjarne', 'Stroustrup','bst@email.com'),
+    ('Ada', 'Lovelace','alove@email.com'),
+    ('Grace', 'Hopper','gho@email.com'),
+    ('Radia', 'Perlman','rperl@email.com');
